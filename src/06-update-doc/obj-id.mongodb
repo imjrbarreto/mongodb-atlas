@@ -1,0 +1,11 @@
+use("platzi_store")
+// 65ad1384b7ea7e3794d02bd7
+
+db.products.updateOne(
+  {_id: ObjectId("65ad1384b7ea7e3794d02bd7")},
+  {
+    $inc: {
+      price: 200
+    }
+  }
+)
